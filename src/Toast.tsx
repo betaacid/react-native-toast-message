@@ -111,7 +111,7 @@ export function Toast(props: ToastProps) {
  * ```
  */
 function getRef() {
-  const reversePriority = [...refs].reverse();
+  const reversePriority = [...refs];
   const activeRef = reversePriority.find((ref) => ref?.current !== null);
   if (!activeRef) {
     return null;
